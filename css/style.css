@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+body {
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  font-family: 'Hind Madurai', sans-serif;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(7rem, auto);
+  grid-template-areas:
+  "logo logo logo logo nav nav nav nav nav nav nav nav"
+  "hero hero hero hero hero hero hero hero hero hero hero hero"
+  "about about about about about about about about sidebar sidebar sidebar sidebar"
+  "employee1 employee1 employee1 employee1 employee2 employee2 employee2 employee2 employee3 employee3 employee3 employee3"
+  "services services services services services services services services services services services services"
+  "contact contact contact contact contact contact contact-form contact-form contact-form contact-form contact-form contact-form"
+  "empty-footer-left empty-footer-left empty-footer-left empty-footer-left footer footer footer footer empty-footer-right empty-footer-right empty-footer-right empty-footer-right";
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(7rem, auto);
+  grid-template-areas:
+  "logo logo logo logo nav nav nav nav nav nav nav nav"
+  "body body body body body body body body body body body body"
+  "empty-footer-left empty-footer-left empty-footer-left empty-footer-left footer footer footer footer empty-footer-right empty-footer-right empty-footer-right empty-footer-right";
+}
+
+.container2 h2:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.terms {
+  background-color: #E4E4E4;
+  grid-area: body;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.terms * {
+  background-color: #E4E4E4;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  grid-area: logo;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.logo img {
+  display: flex;
+  height: 40px;
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-area: nav;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right: 6rem;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.hero img {
+  height: auto;
+  width: 100%;
+}
+
+.about {
+  grid-area: about;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: sidebar;
+  padding-left: 1rem;
+  padding-right: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.sidebar q {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar p {
+  font-size: 2.2rem;
+  color: #666;
+}
+
+.services {
+  grid-area: services;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.employee1 {
+  background-color: #E4E4E4;
+  grid-area: employee1;
+  padding-left: 12rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.employee1 * {
+  background-color: #E4E4E4;
+}
+
+.employee2 {
+  background-color: #E4E4E4;
+  grid-area: employee2;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.employee2 * {
+  background-color: #E4E4E4;
+}
+
+.employee3 {
+  background-color: #E4E4E4;
+  grid-area: employee3;
+  padding-left: 5rem;
+  padding-right: 12rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.employee3 * {
+  background-color: #E4E4E4;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio h2 {
+  margin-bottom: 0rem;
+}
+
+.bio p {
+  color: #666;
+  text-transform: lowercase;
+}
+
+.bio img {
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  background-color: #E4E4E4;
+  display: flex;
+  align-items: center;
+  grid-area: contact;
+  padding-left: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact * {
+  background-color: #E4E4E4;
+}
+
+.contact img {
+  margin-left: 4rem;
+  border-width: 1px;
+  border-style: ridge;
+  border-color: #989898;
+}
+
+.contact-form {
+  background-color: #E4E4E4;
+  grid-area: contact-form;
+  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact-form * {
+  background-color: #E4E4E4;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  text-transform: lowercase;
+}
+
+.contact-form #name, .contact-form #email {
+  background-color: white;
+  display: block;
+  height: 2.5rem;
+  width: 50%;
+  margin-bottom: 1rem;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 18px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-width: 1px;
+}
+
+.contact-form #message {
+  background-color: white;
+  display: block;
+  height: 10rem;
+  width: 100%;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 18px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.contact-form #submit {
+  background-color: white;
+  border-radius: 0%;
+  height: 3rem;
+  width: auto;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 1px;
+  border-style: ridge;
+  border-color: #989898;
+}
+
+.empty-footer-left {
+  grid-area: empty-footer-left;
+  background-color: #000;
+}
+
+.empty-footer-right {
+  grid-area: empty-footer-right;
+  background-color: #000;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer * {
+  color: white;
+  background-color: #000;
+}
+
+.footer i {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.footer p {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
